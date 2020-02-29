@@ -124,56 +124,13 @@ initTab = function ($navs, $conts, curClsName) {
     })
 }
 
-
-    $.fn.slideDown = function (duration) {    
-      var position = this.css('position');
-      this.show();
-      this.css({
-        position: 'absolute',
-        visibility: 'hidden'
-      });
-      var height = this.height();
-      this.css({
-        position: position,
-        visibility: 'visible',
-        overflow: 'hidden',
-        height: 0
-      });
-      this.animate({
-        height: height+20
-      }, duration);
-    };
-
-    $.fn.slideUp = function (duration) {    
-        var position = this.css('position');
-        this.show();
-        this.css({
-          position: 'absolute',
-          visibility: 'hidden'
-        });
-        var height = this.height();
-        this.css({
-          position: position,
-          visibility: 'visible',
-          overflow: 'hidden',
-          padding:0,
-          height: height
-        });
-        this.animate({
-          height: 0
-        }, duration);
-      };
+       
+$(function () {
+    initTab($('.in_about_ul li'),$(' .about-right-box'),'on')
+})
 // 诚聘英才折叠
 
-        $('.li-tit').on('click',function(){
-            if($(this).hasClass('on')){
-                $(this).removeClass('on');
-                $(this).siblings('.li-con').slideUp();
-            }else{
-                $(this).addClass('on');
-                $(this).siblings('.li-con').slideDown();
-            }
-        });
+
 
 
 })

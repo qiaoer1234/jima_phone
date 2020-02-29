@@ -141,13 +141,13 @@
                         </li>
                     </ul>
     
-                    <h2 class="title mt20">招聘职位</h2>
+                    <h2 class="title">招聘职位</h2>
                     <div class="wow-problem-list">
                         <ul class="problem-ul">
                             <li class="bbox">
                                 <div class="li-tit">
                                     <p class="i-b">市场专员</p>
-                                    <p class="fr text_blue i-b clicksee"><i class="i_clicksee"></i>点击查看</p>
+                                    <p class="fr text_blue i-b clicksee"><i class="i_clicksee"><img src="style/css/img/cpyc_9.png" alt="" ></i>点击查看</p>
                                 </div>
                                 <div class="li-con" style="display: none;">
                                     <p> 经验：互联网行业经验</p>
@@ -162,14 +162,15 @@
                                         8、负责产品或项目上线前的文档整理、商务推广和市场宣传等工作。</p>
                                     <b>任职要求</b>
                                     <p>热爱产品，热爱学习，有理想，有干劲的年轻人！</p>
-                                    <a class="lxhr i-b fr">联系HR</a><a class="tdjl i-b fr">投递简历 </a>
+                                    <a class="tdjl i-b"  href="mailto:hr@jima.com" >投递简历 </a>
+                                    <a class="lxhr i-b" href="tel:0551-62656656">联系HR</a>
                                 </div>
                             </li>
                             
                             <li class="bbox">
                                 <div class="li-tit">
                                     <p class="i-b">运营专员</p>
-                                    <p class="fr text_blue i-b clicksee"><i class="i_clicksee"></i>点击查看</p>
+                                    <p class="fr text_blue i-b clicksee"><i class="i_clicksee"><img src="style/css/img/cpyc_9.png" alt="" ></i>点击查看</p>
                                 </div>
                                 <div class="li-con" style="display: none;">
                                     <p> 经验：互联网行业经验</p>
@@ -184,13 +185,14 @@
                                         8、负责产品或项目上线前的文档整理、商务推广和市场宣传等工作。</p>
                                     <b>任职要求</b>
                                     <p>热爱产品，热爱学习，有理想，有干劲的年轻人！</p>
-                                    <a class="lxhr i-b fr">联系HR</a><a class="tdjl i-b fr">投递简历 </a>
+                                    <a class="tdjl i-b"  href="mailto:hr@jima.com" >投递简历 </a>
+                                    <a class="lxhr i-b" href="tel:0551-62656656">联系HR</a>
                                 </div>
                             </li>
                             <li class="bbox">
                                 <div class="li-tit">
                                     <p class="i-b">科技老师</p>
-                                    <p class="fr text_blue i-b clicksee"><i class="i_clicksee"></i>点击查看</p>
+                                    <p class="fr text_blue i-b clicksee"><i class="i_clicksee"><img src="style/css/img/cpyc_9.png" alt="" ></i>点击查看</p>
                                 </div>
                                 <div class="li-con" style="display: none;">
                                     <p> 经验：互联网行业经验</p>
@@ -205,12 +207,13 @@
                                         8、负责产品或项目上线前的文档整理、商务推广和市场宣传等工作。</p>
                                     <b>任职要求</b>
                                     <p>热爱产品，热爱学习，有理想，有干劲的年轻人！</p>
-                                       <a class="lxhr i-b fr">联系HR</a><a class="tdjl i-b fr">投递简历 </a>
+                                    <a class="tdjl i-b"  href="mailto:hr@jima.com" >投递简历 </a>
+                                    <a class="lxhr i-b" href="tel:0551-62656656">联系HR</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <h2 class="title mt20">投递邮箱</h2>
+                    <h2 class="title">投递邮箱</h2>
                     <p class="font14 color_9">bussines@jima.com</p>
                 </div>
         </div>
@@ -231,6 +234,7 @@
 
     <script type="text/javascript" src="style/js/layui/layui.js"></script>
     <script src="style/js/aos.js"></script>
+    <script src="style/js/jquery.js"></script>
     <script src="style/js/zepto.min.js"></script>
     <script src="style/js/zepto/touch.js"></script>
     <script src="style/js/zepto/fx.js"></script>
@@ -241,10 +245,15 @@
             easing: 'ease-out-back',
             duration: 1000
         });
-        
-    $(function () {
-        initTab($('.in_about_ul li'),$(' .about-right-box'),'on')
-    })
+        $('.li-tit').on('click',function(){
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            $(this).siblings('.li-con').slideUp();
+        }else{
+            $(this).addClass('on');
+            $(this).siblings('.li-con').slideDown();
+        }
+    });
     </script>
  
 </body>

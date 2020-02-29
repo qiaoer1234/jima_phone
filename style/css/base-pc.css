@@ -225,7 +225,7 @@ input::-ms-clear {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}ma
+}
 .ellipsis3{
     display: -webkit-box;
     overflow: hidden;

@@ -647,7 +647,7 @@ align-items: center;
     position: relative;
     width: 100%;
     line-height: 36px;
-    font-size: 16px;
+    font-size: .32rem;
     color: #333;
     font-weight: 600;
 }
@@ -688,8 +688,8 @@ align-items: center;
 }
 
 .news_list .news_item {
-    margin-bottom: 16px;
-    padding: 16px;
+    margin-bottom: .32rem;
+    padding: .32rem;
     height: 160px;
     border: 1px solid #ECECEC;
     -webkit-transition: 0.5s;
@@ -706,7 +706,7 @@ align-items: center;
     float: left;
     width: 192px;
     height: 128px;
-    margin-right: 16px;
+    margin-right: .32rem;
     overflow: hidden;
 }
 
@@ -717,7 +717,7 @@ align-items: center;
 
 .news_list .news_item .intro .news_title {
     margin: 0;
-    font-size: 16px;
+    font-size: .32rem;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
@@ -752,8 +752,8 @@ align-items: center;
 .news_status_list .news_status_time .ico.ico_clock,
 .news_status_list .news_status_time .ico.ico_see {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: .32rem;
+    height: .32rem;
     margin: 0 8px 0 0;
     vertical-align: middle;
     background: url(img/page_news_ico_clock.png);
@@ -803,8 +803,8 @@ align-items: center;
 .newdtedit .i_time,
 .newdtedit .i_see {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: .32rem;
+    height: .32rem;
     margin: 0 8px 0 0;
     vertical-align: middle;
     background: url(img/page_news_ico_clock.png);
@@ -863,7 +863,7 @@ align-items: center;
     margin-right: 6px;
     display: inline-block;
     width: 10px;
-    height: 16px;
+    height: .32rem;
     position: relative;
     top: 4px;
 }
@@ -872,7 +872,7 @@ align-items: center;
     margin-left: 6px;
     display: inline-block;
     width: 10px;
-    height: 16px;
+    height: .32rem;
     position: relative;
     top: 4px;
 }
@@ -881,7 +881,8 @@ align-items: center;
 
 /* 诚聘英才 */
 .cpyc_list {
-    height: 258px;
+   overflow-y: auto;
+   margin-bottom: .28rem;
 }
 
 .cpyc_list li {
@@ -889,7 +890,7 @@ align-items: center;
     width: 48%;
     margin-top: .28rem;
     text-align: center;
-    font-size: 16px;
+    font-size: .32rem;
     background: #fff;
     padding: .32rem;
     border: 1px solid #ECECEC;
@@ -930,22 +931,23 @@ align-items: center;
 
 .i_clicksee {
     display: inline-block;
-    width: 16px;
-    height: 18px;
-    margin: 0 8px 0 0;
-    vertical-align: middle;
-    background: url(img/cpyc_9.png);
+    width: .32rem;
+    height: .36rem;
+    margin: 0 .08rem 0 0;
+    /* vertical-align: middle;
+    background: url(img/cpyc_9.png) no-repeat center; */
 }
 
 .problem-ul {
-    padding-top: 10px;
+    padding-top: .28rem;
+    margin-bottom: .28rem;
 }
 
 .problem-ul li {
-    margin-bottom: 24px;
+    margin-bottom: .48rem;
     cursor: pointer;
     border: 1px solid #ECECEC;
-    padding: 0 16px;
+    padding: 0 .32rem;
 }
 
 .problem-ul .li-tit {
@@ -1007,18 +1009,18 @@ align-items: center;
     color: #FFFFFF;
     text-align: center;
     margin-top:.1rem;
+    border: 1px solid #1B62B2;
+
 }
 
 .tdjl:hover {
     color: #1B62B2;
     background: #fff;
-    border: 1px solid #1B62B2;
 }
 
 .lxhr {
     color: #1B62B2;
     background: #fff;
-    border: 1px solid #1B62B2;
     margin-left: .32rem;
 }
 
