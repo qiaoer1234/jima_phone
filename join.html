@@ -47,23 +47,30 @@
             <div class="navbar-box re">
                 <ul class="re navbar-ul1">
                     <li><a href="index.html" class="bbox"><span>首页</span></a></li>
-                    <li class="down">
+                    <li class="mainmenu">
                         <a href="javascript:;" class="bbox"><span>课程介绍</span><img src="style/images/icon_right.png"
                                 alt="" class="img-responsive i-b fr"></a>
-
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">课程体系</a></li>
+                                <li><a href="#">教学模式</a></li>
+                                <li><a href="#">公司简介</a></li>
+                            </ul>
+                        </div>
                     </li>
+
                     <li><a href="join.html" class="bbox"><span>加盟合作</span></a></li>
                     <li><a href="news.html" class="bbox"><span>新闻资讯</span></a></li>
                     <li><a href="about.html" class="bbox"><span>关于吉码</span></a></li>
                 </ul>
-                <ul class="">
+                <!-- <ul class="">
                     <dl class="down_dl">
                         <li class="">
                             <dd><a href="course.html">课程体系</a></dd>
                             <dd><a href="model.html">教学模式</a href=":;"> </dd>
                         </li>
                     </dl>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </nav>
@@ -295,18 +302,28 @@
 
     <script type="text/javascript" src="style/js/layui/layui.js"></script>
     <script src="style/js/aos.js"></script>
+    <script src="style/js/jquery.js"></script>
     <script src="style/js/zepto.min.js"></script>
     <script src="style/js/zepto/touch.js"></script>
     <script src="style/js/zepto/fx.js"></script>
     <script src="style/js/swiper.min.js"></script>
     <script src="style/js/index.js"></script>
-    <script src="style/js/jquery.js"></script>
 
     <script>
         AOS.init({
             easing: 'ease-out-back',
             duration: 1000
         });
+        $('.mainmenu').hover(
+            function(){
+                $(this).children('.submenu').slideDown(300);
+                $(this).addClass('active');
+            },
+            function(){
+                $(this).children('.submenu').slideUp(300);
+                $(this).removeClass('active');
+            }
+        )
     </script>
     <script>
         layui.config({

@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>吉玛首页</title>
+    <link rel="stylesheet" type="text/css" href="style/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="style/css/swiper.min.css" />
+    <link rel="stylesheet" href="style/css/base-pc.css" type="text/css" />
+    <link rel="stylesheet" href="style/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="style/css/index.css" type="text/css" />
+    <link rel="stylesheet" href="style/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="style/css/aos.css" type="text/css" />
+
+    <link href="style/css/video.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/courseList.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="style/css/jquery.jscrollpane.css">
+
+
+    <script src="style/js/flexible.min.js"></script>
+    <!--[if lt IE 9]>
+　　<script src="style/js/1.4.2/respond.js"></script>
+　　<script src="style/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <style>
+        .video-list{
+            overflow-y: scroll;-webkit-overflow-scrolling:touch;
+            height:6rem;
+        }
+    </style>
+</head>
+
+
+<body aos-easing="ease-out-back" aos-duration="1000" aos-delay="0">
+    <header>
+        <div class="head-wrapper">
+            <div class="logo">
+                <a href=""><img src="style/images/logo.png" alt="雷米网"></a>
+            </div>
+            <div class="head-right">
+                <div class="j_nav_tel">400-808-0008</div>
+                <div class="sidebar-wrapper">
+                    <img src="style/images/nav.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+  
+    <nav>
+        <div class="mask"></div>
+        <div class="navbar-wrapper" style="z-index: 1000000 !important;opacity: 1;">
+            <div class="navbar-head">
+                <span class="title">菜单</span>
+                <span class="btn"><img src="style/images/close.png" alt=""></span>
+                <span class="btn2"><img src="style/images/icon_left.png" alt=""></span>
+            </div>
+            <div class="navbar-box re">
+                <ul class="re navbar-ul1">
+                    <li><a href="index.html" class="bbox"><span>首页</span></a></li>
+                    <li class="down">
+                        <a href="javascript:;" class="bbox"><span>课程介绍</span><img src="style/images/icon_right.png"
+                                alt="" class="img-responsive i-b fr"></a>
+  
+                    </li>
+                    <li><a href="join.html" class="bbox"><span>加盟合作</span></a></li>
+                    <li><a href="news.html" class="bbox"><span>新闻资讯</span></a></li>
+                    <li><a href="about.html" class="bbox"><span>关于吉码</span></a></li>
+                </ul>
+                <ul class="">
+                    <dl class="down_dl">
+                        <li class="">
+                            <dd><a href="course.html">课程体系</a></dd>
+                            <dd><a href="model.html">教学模式</a></dd>
+                            <dd><a href="courseList.html">在线教学</a></dd>
+                        </li>
+                    </dl>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <div class="addCourse">
+        <div class="c-video pr">
+            <video width="100%" height="100%" id="my-video" controls class="video-js vjs-fluid" preload="auto" poster="./style/img/video.png" 
+            webkit-playsinline="true"
+            x5-video-player-type="h5-page"
+            x5-video-orientation="portraint"
+            >
+              <source src="../../1.mp4" type="video/mp4">
+            </video>
+            <div class="videoMask pa"></div>
+        </div>
+        <div class="section">
+          <div class="tab-btn">
+            <div class="item active">目录</div>
+            <div class="item ">详情</div>
+          </div>
+          <div class="tab" style="padding-bottom: 0.44rem;">
+            <ul class="active video-list  scroll-pane">
+              <li class="active" data-video="../../1.mp4" data-img="./style/img/video.png">
+                <div class="inner">
+                    <i class="order">1</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li data-video="../../2.mp4" data-img="./style/img/start.png">
+                  <div class="inner">
+                      <i class="order">2</i>
+                      <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                      <i class="min">25min</i>
+                      <img src="./style/img/start.png" class="start"/>
+                  </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">3</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                  <div class="inner">
+                      <i class="order">4</i>
+                      <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                      <i class="min">25min</i>
+                      <img src="./style/img/start.png" class="start"/>
+                  </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">5</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">6</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">7</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">8</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">9</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">10</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                    <i class="order">11</i>
+                    <p class="title">世界上第一台计算机长什么样？世界上第一台计算机长什么样？</p>
+                    <i class="min">25min</i>
+                    <img src="./style/img/start.png" class="start"/>
+                </div>
+              </li>
+            </ul>
+            <ul class="detais">
+                <h3 class="t-title">编程启蒙课-第一节：世界第一台计算机长什么样？</h3>
+                <li>课时：共75节</li>
+                <li>最近在学：20193人</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  
+    <!--    底部开始-->
+    <div class="foot bbox w clear">
+        <div class="foot_list w100 auto bbox clear te-c">
+            <div class="ercode  aos-init aos-animate" aos="fade-left">
+                <img src="style/images/code.png" alt="二维码" />
+                <p class="txt">扫一扫关注公众号</p>
+            </div>
+            <p class="a0 mt20">安徽吉码教育科技有限公司©版权所有 <a class="a1">&nbsp;皖ICP备17027454号-1 </a></p>
+            <p><a class="a2">皖公网安备 33010302003060号</a></p>
+        </div>
+    </div>
+  
+    <script type="text/javascript" src="style/js/layui/layui.js"></script>
+    <script src="style/js/jquery.js"></script>
+    <script src="style/js/jquery.mousewheel.js"></script>
+    <script src="style/js/jquery.jscrollpane.min.js"></script>
+    <script src="style/js/aos.js"></script>
+    <script src="style/js/zepto.min.js"></script>
+    <script src="style/js/zepto/touch.js"></script>
+    <script src="style/js/zepto/fx.js"></script>
+    <script src="style/js/video.min.js"></script>
+    <script src="style/js/swiper.min.js"></script>
+    
+    <script>
+        var ua = navigator.userAgent.toLocaleLowerCase();
+        //alert(ua);
+          //x5内核
+          if (ua.match(/tencenttraveler/) != null || ua.match(/qqbrowse/) != null) {
+              $('#my-video').attr("x5-video-player-type","h5-page");
+          }else{
+              //ios端
+              // $('#my-video').attr('webkit-playsinline',"true").attr('playsinline',"true");
+            $('#my-video').attr('x-webkit-airplay',true).attr('x5-playsinline',true).attr('webkit-playsinline',true).attr('playsinline',true).attr("x5-video-player-type","h5"); 
+          }
+  
+        $('.tab-btn .item').click(function () { 
+          var $index = $(this).index();
+          $(this).addClass('active').siblings().removeClass('active');
+          $('.tab ul').eq($index).addClass('active').siblings().removeClass('active');
+        });
+    
+        $('.video-list li').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+        });
+    
+    
+        scrollbar();
+        function scrollbar () { 
+          $(function() {
+            var $fontSize = $('#html').css('fontSize');
+            $('.tab ul').each(function(index,el){
+              if($(el).height() > 9.7 * parseInt($fontSize)){
+                var bars = '.jspHorizontalBar, .jspVerticalBar';
+                  $('.scroll-pane').bind('jsp-initialised', function (event, isScrollable) {
+                    $(this).find(bars).hide();
+                  }).jScrollPane().hover(
+                  function () {
+                    $(this).find(bars).stop().fadeTo('fast', 0.9);
+                  },
+                  function () {
+                    $(this).find(bars).stop().fadeTo('fast', 0);
+                  });				
+              }else{
+                $('.scroll-pane').unbind('jsp-initialised');
+              }
+            });
+              
+          });
+        }
+  
+        //设置中文
+      videojs.addLanguage('zh-CN', {
+                "Play": "播放",
+                "Pause": "暂停",
+                "Current Time": "当前时间",
+                "Duration": "时长",
+                "Remaining Time": "剩余时间",
+                "Stream Type": "媒体流类型",
+                "LIVE": "直播",
+                "Loaded": "加载完毕",
+                "Progress": "进度",
+                "Fullscreen": "全屏",
+                "Non-Fullscreen": "退出全屏",
+                "Mute": "静音",
+                "Unmute": "取消静音",
+                "Playback Rate": "播放速度",
+                "Subtitles": "字幕",
+                "subtitles off": "关闭字幕",
+                "Captions": "内嵌字幕",
+                "captions off": "关闭内嵌字幕",
+                "Chapters": "节目段落",
+                "Close Modal Dialog": "关闭弹窗",
+                "Descriptions": "描述",
+                "descriptions off": "关闭描述",
+                "Audio Track": "音轨",
+                "You aborted the media playback": "视频播放被终止",
+                "A network error caused the media download to fail part-way.": "网络错误导致视频下载中途失败。",
+                "The media could not be loaded, either because the server or network failed or because the format is not supported.": "视频因格式不支持或者服务器或网络的问题无法加载。",
+                "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
+                "No compatible source was found for this media.": "无法找到此视频兼容的源。",
+                "The media is encrypted and we do not have the keys to decrypt it.": "视频已加密，无法解密。",
+                "Play Video": "播放视频",
+                "Close": "关闭",
+                "Modal Window": "弹窗",
+                "This is a modal window": "这是一个弹窗",
+                "This modal can be closed by pressing the Escape key or activating the close button.": "可以按ESC按键或启用关闭按钮来关闭此弹窗。",
+                ", opens captions settings dialog": ", 开启标题设置弹窗",
+                ", opens subtitles settings dialog": ", 开启字幕设置弹窗",
+                ", opens descriptions settings dialog": ", 开启描述设置弹窗",
+                ", selected": ", 选择",
+                "captions settings": "字幕设定",
+                "Audio Player": "音频播放器",
+                "Video Player": "视频播放器",
+                "Replay": "重播",
+                "Progress Bar": "进度小节",
+                "Volume Level": "音量",
+                "subtitles settings": "字幕设定",
+                "descriptions settings": "描述设定",
+                "Text": "文字",
+                "White": "白",
+                "Black": "黑",
+                "Red": "红",
+                "Green": "绿",
+                "Blue": "蓝",
+                "Yellow": "黄",
+                "Magenta": "紫红",
+                "Cyan": "青",
+                "Background": "背景",
+                "Window": "视窗",
+                "Transparent": "透明",
+                "Semi-Transparent": "半透明",
+                "Opaque": "不透明",
+                "Font Size": "字体尺寸",
+                "Text Edge Style": "字体边缘样式",
+                "None": "无",
+                "Raised": "浮雕",
+                "Depressed": "压低",
+                "Uniform": "均匀",
+                "Dropshadow": "下阴影",
+                "Font Family": "字体库",
+                "Proportional Sans-Serif": "比例无细体",
+                "Monospace Sans-Serif": "单间隔无细体",
+                "Proportional Serif": "比例细体",
+                "Monospace Serif": "单间隔细体",
+                "Casual": "舒适",
+                "Script": "手写体",
+                "Small Caps": "小型大写字体",
+                "Reset": "重启",
+                "restore all settings to the default values": "恢复全部设定至预设值",
+                "Done": "完成",
+                "Caption Settings Dialog": "字幕设定视窗",
+                "Beginning of dialog window. Escape will cancel and close the window.": "开始对话视窗。离开会取消及关闭视窗",
+                "End of dialog window.": "结束对话视窗"
+              });
+  
+      var myPlayer = videojs('my-video');
+      videojs("my-video",{fluid: true},function(){
+          window.myPlayer = this;
+          //myPlayer.play();
+      });
+  
+      $('.video-list li').click(function(){
+         $(this).addClass('active').siblings().removeClass('active');
+          var myPlayer = videojs('my-video');
+          var videoUrl = $(this).attr("data-video");
+          var $img = $(this).attr("data-img");
+          
+          videojs("my-video",{ fluid: true },function() {
+              window.myPlayer = this;
+              $("#my-video").attr('poster',$img);
+              $("#my-video source").attr("src", videoUrl);
+              myPlayer.src(videoUrl);
+              myPlayer.poster($img);
+              myPlayer.load(videoUrl);
+              myPlayer.play();
+              $('.videoMask').addClass('hide');
+              $('.vjs-big-play-button').hide();
+          });
+      });
+  
+          /* 修改播放控件逻辑 */
+          $('.c-video').on('touchstart','#my-video',function (event) {
+            event.stopPropagation();
+            myPlayer.pause();
+            $('.vjs-big-play-button').show();
+            $('.vjs-play-control').addClass('vjs-paused').removeClass('vjs-playing');
+            $('.videoMask').addClass('hide');
+            //$('.videoMask').removeClass('hide');
+          });
+  
+          $('.c-video').on('touchstart','.vjs-big-play-button',function (event) {
+              event.stopPropagation();
+              myPlayer.play();
+              $('.vjs-big-play-button').hide();
+              $('.vjs-play-control').addClass('vjs-playing').removeClass('vjs-paused');
+  
+              $('.videoMask').addClass('hide');
+          });
+  
+  
+          $('.vjs-play-control').hide();
+  
+          $('.c-video').on('touchstart','.vjs-play-control',function (event) {
+              event.stopPropagation();
+              if($(this).hasClass('vjs-playing')){
+                $('.vjs-play-control').addClass('vjs-paused').removeClass('vjs-playing');
+                myPlayer.pause();
+              }else{
+                $('.vjs-play-control').addClass('vjs-playing').removeClass('vjs-paused');
+                myPlayer.play();
+              }
+              return false;
+          });
+    </script>
+    <script src="style/js/index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,375 @@
+.clearfix:after{
+  clear: both;
+  content: '';
+  display: block;
+  line-height: 1;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.pr{
+  position: relative;
+}
+
+.pa{
+  position: absolute;
+}
+
+.addCourse{
+  line-height: 1;
+  font-size: 0.28rem;
+}
+
+img{
+  vertical-align: top;
+}
+
+.c-banner img{
+  width: 100%;
+}
+
+.c-main{
+  padding: 0 0.48rem;
+}
+
+.c-main .name{
+  padding: 0.32rem 0 0.16rem;
+}
+
+.c-main .name .text{
+  font-size: 0.36rem;
+  color: #333333; 
+  line-height: 0.8rem;
+  font-weight: bold;
+}
+
+.c-main .name .learnBtn{
+  display: inline-block;
+  background: #1B62B2;
+  border-radius: 0.08rem;
+  width: 2.1rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+.c-main .course-time{
+  color: #919191;
+  line-height: 0.5rem;
+}
+.c-main .introduce{
+  color: #919191;
+  line-height: 0.5rem;
+  padding: 0.08rem 0 0.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.section .tab-btn{
+  margin: 0 0.48rem;
+  box-shadow: inset 0 -1px 0 0 #ECECEC;
+  font-size: 0;
+}
+
+.section .item{
+  font-size: 0.32rem;
+  color: #BFBFBF;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin: 0 0.32rem 0 0.48rem;
+  padding: 0.2rem 0 0.16rem;
+  line-height: 0.44rem;
+}
+
+.section .item:first-child{
+  margin-left: 0;
+}
+
+.section .item::after{
+  background: #1B62B2;
+  width: 100%;
+  height: 0.08rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.04rem;
+  display: none;
+  content: ' ';
+}
+
+.section .item.active{
+  color: #1B62B2;
+}
+
+.section .item.active::after{
+  display: block;
+}
+
+.tab .order,.tab .t-main{
+  display: inline-block;
+}
+
+.tab li .order{
+  background: #1B62B2;
+  color: #FFFFFF;
+  font-size: 0.28rem;
+  height: 0.36rem;
+  width: 0.36rem;
+  text-align: center;
+  line-height: 0.36rem;
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+}
+
+.tab li{
+  font-size: 0;
+  position: relative;
+  padding-left: 0.6rem;
+}
+
+.tab li .title{
+  padding-right: 0.12rem;
+  font-size: 0.28rem;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 4.2rem;
+  vertical-align: top;
+}
+
+.tab li .min{
+  font-size: 0.28rem;
+  color: #BFBFBF;
+}
+
+.tab li.active .title,.tab li.active .min{
+  color: #1B62B2;
+}
+
+.tab li a,.tab li .inner{
+  display: block;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  box-shadow: inset 0 -1px 0 0 #ECECEC;
+}
+
+.tab ul{
+  display: none;
+  /* width: 100% !important; */
+  /* padding-left: 0.48rem !important;
+  padding-right: 0.48rem !important; */
+}
+
+.jspPane{
+  width: 100% !important;
+}
+
+.tab ul.active{
+  display: block;
+}
+
+.tab li{
+  margin: 0 0.48rem;
+}
+
+.tab li .start{
+  width: 0.32rem;
+  height: 0.32rem;
+  position: absolute;
+  right: 0;
+  top: 0.32rem;
+}
+
+.tab .detais .t-title{
+  font-size: 0.32rem;
+  font-weight: bold;
+  line-height: 0.44rem;
+  color: #333333;
+  margin: 0.44rem 0.48rem;
+}
+
+.tab .detais li{
+  color: #919191;
+  line-height: 0.4rem;
+  margin-bottom: 0.16rem;
+  font-size: 0.28rem;
+  padding-left: 0;
+}
+
+.more-course{
+  padding: 0.4rem 0 0 0.48rem;
+}
+
+.more-course .m-title{
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #333333;
+  border-left: 4px solid #1B62B2;
+  padding-left: 0.32rem;
+ 
+}
+
+.more-course ul{
+  padding-bottom: 0.44rem;
+}
+
+.more-course .title-wrap{
+  margin-right: 0.3rem;
+  padding: 0.2rem 0 0.2rem 0;
+  box-shadow: inset 0 -1px 0 0 #ECECEC;
+}
+
+.more-course li{
+  text-align: center;
+  width: 50%;
+  margin-top: 0.44rem;
+  float: left;
+}
+
+.more-course li .inner{
+  padding-right: 0.3rem;
+}
+
+.more-course li img{
+  width: 100%;
+}
+
+.more-course li p{
+  margin-top: 0.16rem;
+  color: #333333;
+  line-height: 0.4rem;
+}
+
+.jspDrag{
+  background: #1B62B2 !important;
+}
+
+.c-video{
+  width: 100%;
+  height: 4.22rem;
+  position: relative;
+  overflow: hidden !important;
+}
+
+
+.video-js { /* 给.video-js设置字体大小以统一各浏览器样式表现，因为video.js采用的是em单位 */
+  font-size: 14px;
+}
+
+
+.vjs-loading-spinner { /* 加载圆圈 */
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  margin: 0;
+  margin-top: -1em !important;
+  margin-left: -1em !important;
+}
+
+#myVedio:focus{
+  outline: none;
+}
+
+#myVedio input{
+  margin: 0;
+  padding: 0;
+}
+
+.video:focus{
+  outline: none;
+}
+
+#my-video_html5_api:focus{
+  outline: none;
+}
+
+#my-video_html5_api{ object-fit: cover; }
+
+/* .video-js{
+  background: transparent !important;
+} */
+
+.video-js .vjs-big-play-button{
+  width: 1.12rem;
+  height: 1.12rem;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.56rem;
+  margin-top: -0.56rem;
+  border: none;
+  background: #fff url(../img/play.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before, .vjs-icon-play:before {
+  content: " ";
+}
+
+.vjs-error .vjs-error-display:before{
+  content: " ";
+}
+
+.video-js .vjs-modal-dialog:focus,.jspContainer:focus,.scroll-pane:focus {
+  outline: none;
+}
+
+.video-js .vjs-play-progress:before,.vjs-slider-horizontal .vjs-volume-level:before{
+  top: -.333333333333333em;
+}
+
+
+.video-js .vjs-progress-control:hover .vjs-play-progress:before{
+  top: -.333333333333333em;
+}
+
+/* .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .vjs-icon-play:before{
+  content: "\f101";
+} */
+
+.video-js.vjs-16-9, .video-js.vjs-4-3, .video-js.vjs-fluid {
+  height: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.video-js .vjs-tech{
+  height: 100% !important;
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+
+.my-video-dimensions.vjs-fluid{
+  padding-top: 0 !important;
+}
+
+.video-js .vjs-big-play-button{
+  z-index: 100;
+}
+
+.videoMask{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.50);
+  z-index: 1;
+}
+
+.videoMask.hide{
+  display: none;
+}
+

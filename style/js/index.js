@@ -9,6 +9,7 @@ Zepto(function ($) {
     })
 
 
+
     // 侧边导航淡入淡出
     const $mask = $('.mask'),
         $navbar = $('.navbar-wrapper'),
@@ -31,12 +32,13 @@ Zepto(function ($) {
         closeNav();
     })
     // 三级菜单展开
-    $selBlock.tap(function () {
-        openSel();
-    })
-    $navbtn2.tap(function () {
-        closeSel();
-    })
+    // $selBlock.tap(function () {
+    //     openSel();
+    // })
+    // $navbtn2.tap(function () {
+    //     closeSel2();
+    // })
+    
 
 
     function openNav() {
